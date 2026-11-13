@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luciana de Matos — Corretora de Imóveis | Alto Padrão e Investimento no Rio de Janeiro</title>
-<meta name="description" content="Imóveis de alto padrão e investimento no Rio de Janeiro, com segurança e estratégia. Atendimento direto com Luciana de Matos, corretora CRECI-RJ 106.133. Simule seu financiamento e fale no WhatsApp.">
+<meta name="description" content="Imóveis de alto padrão e investimento no Rio de Janeiro, com segurança e estratégia. Catálogo de imóveis, simulação de financiamento e atendimento direto com Luciana de Matos, corretora CRECI-RJ 106.133.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
@@ -43,13 +43,13 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,10,7,.93);backdrop-fi
 .logo-m{width:42px;height:42px;border:1.5px solid var(--gold);border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.15rem;color:var(--gold2);font-weight:700;background:var(--gold-soft)}
 .logo b{display:block;font-family:var(--serif);font-size:1.05rem;letter-spacing:.05em}
 .logo small{display:block;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-/* Hero */
-.hero{padding:46px 0 50px;background:radial-gradient(900px 480px at 85% -10%,rgba(201,162,39,.22),transparent 60%),radial-gradient(700px 420px at -10% 110%,rgba(201,162,39,.1),transparent 55%),linear-gradient(180deg,#171208,var(--bg))}
+/* Hero com paisagem do Rio */
+.hero{padding:46px 0 54px;background:linear-gradient(180deg,rgba(12,10,7,.68) 0%,rgba(12,10,7,.80) 55%,rgba(12,10,7,.96) 100%),url('fundo-hero.jpg') center 32%/cover no-repeat,var(--bg)}
 .hero-in{display:grid;gap:28px;align-items:center}
 @media(min-width:880px){.hero-in{grid-template-columns:1.08fr .92fr}}
-.hero .badge{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--gold2);border:1px solid var(--line);background:var(--gold-soft);padding:7px 14px;border-radius:999px;margin-bottom:18px}
-.hero h1{font-size:clamp(1.95rem,6.2vw,3.15rem);max-width:640px}
-.hero p.lead{font-size:clamp(1rem,2.5vw,1.15rem);color:var(--muted);max-width:600px;margin:16px 0 26px}
+.hero .badge{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--gold2);border:1px solid var(--line);background:rgba(12,10,7,.55);padding:7px 14px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(1.95rem,6.2vw,3.15rem);max-width:640px;text-shadow:0 2px 18px rgba(0,0,0,.55)}
+.hero p.lead{font-size:clamp(1rem,2.5vw,1.15rem);color:#ddd2b8;max-width:600px;margin:16px 0 26px}
 .hero p.lead b{color:var(--bege)}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
 .hero-note{margin-top:15px;font-size:.85rem;color:var(--muted)}
@@ -58,6 +58,17 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,10,7,.93);backdrop-fi
 .photo-chip{position:absolute;left:14px;bottom:14px;background:rgba(10,8,5,.82);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:12px;padding:9px 14px}
 .photo-chip b{display:block;font-family:var(--serif);font-size:1rem;color:var(--bege)}
 .photo-chip span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
+/* Barra de busca */
+.search{margin-top:34px;background:rgba(15,12,7,.92);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.search h3{font-size:1.08rem;margin-bottom:4px}
+.search p{color:var(--muted);font-size:.88rem;margin-bottom:14px}
+.search-grid{display:grid;gap:12px}
+@media(min-width:880px){.search-grid{grid-template-columns:repeat(4,1fr) auto;align-items:end}}
+.field label{display:block;font-size:.82rem;font-weight:700;letter-spacing:.04em;color:var(--gold2);margin-bottom:7px;text-transform:uppercase}
+.field input,.field select,.field textarea{width:100%;background:#0f0c07;border:1px solid var(--line);border-radius:10px;color:var(--bege);padding:13px 14px;font-size:1rem;font-family:var(--sans)}
+.field textarea{resize:vertical;min-height:96px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);border-color:transparent}
+.field select option{background:#0f0c07;color:var(--bege)}
 /* Trust bar */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
 .trust-in{display:grid;grid-template-columns:repeat(2,1fr)}
@@ -66,9 +77,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,10,7,.93);backdrop-fi
 .trust-item b{display:block;font-family:var(--serif);font-size:1.05rem;color:var(--gold2)}
 .trust-item span{font-size:.8rem;color:var(--muted)}
 @media(min-width:760px){.trust-in{grid-template-columns:repeat(4,1fr)}.trust-item{border-right:1px solid rgba(201,162,39,.12)}.trust-item:last-child{border-right:0}}
-/* Cards */
+/* Cards genéricos */
 .grid{display:grid;gap:18px;margin-top:30px}
-@media(min-width:760px){.grid.c2{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:760px){.grid.c2{grid-template-columns:repeat(2,1fr)}.grid.c3{grid-template-columns:repeat(3,1fr)}}
 .card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;display:flex;flex-direction:column;gap:10px}
 .card .tag{align-self:flex-start;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#241a02;background:linear-gradient(135deg,var(--gold2),var(--gold));padding:5px 11px;border-radius:999px}
 .card h3{font-size:1.3rem}
@@ -78,14 +89,50 @@ header{position:sticky;top:0;z-index:50;background:rgba(12,10,7,.93);backdrop-fi
 .card ul li::before{content:"◆";position:absolute;left:0;color:var(--gold);font-size:.65rem;top:9px}
 .card .btn{margin-top:8px;justify-content:center}
 .card.feature{border-width:1.5px;background:radial-gradient(600px 300px at 100% 0%,rgba(201,162,39,.16),transparent 60%),linear-gradient(180deg,var(--card2),var(--card))}
-/* Simulator */
+/* Catálogo */
+.cat-note{margin-top:22px;border:1.5px dashed var(--gold);background:var(--gold-soft);border-radius:14px;padding:16px 20px;font-size:.95rem;color:var(--bege)}
+.cat-note b{color:var(--gold2)}
+.toolbar{display:grid;gap:12px;margin-top:26px}
+@media(min-width:880px){.toolbar{grid-template-columns:1.4fr 1fr 1fr 1fr 1fr}}
+.cat-count{margin:18px 0 4px;color:var(--muted);font-size:.9rem}
+.props{display:grid;gap:18px;margin-top:14px}
+@media(min-width:640px){.props{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.props{grid-template-columns:repeat(3,1fr)}}
+.prop{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.prop-img{position:relative;aspect-ratio:4/3;background:radial-gradient(320px 200px at 50% 0%,rgba(201,162,39,.20),transparent 70%),linear-gradient(160deg,#241c0f,#120e07);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--gold2)}
+.prop-img svg{width:52px;height:52px;opacity:.85}
+.prop-img span{font-size:.8rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.prop-badge{position:absolute;top:12px;left:12px;font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#241a02;background:linear-gradient(135deg,var(--gold2),var(--gold));padding:5px 11px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+.prop-code{position:absolute;top:12px;right:12px;font-size:.72rem;font-weight:700;letter-spacing:.1em;color:var(--bege);background:rgba(10,8,5,.72);border:1px solid var(--line);padding:5px 10px;border-radius:999px}
+.prop-body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.prop-body h3{font-size:1.22rem}
+.prop-loc{color:var(--muted);font-size:.9rem;margin-top:-6px}
+.prop-price{font-family:var(--serif);font-size:1.15rem;color:var(--gold2)}
+.prop-price small{display:block;font-family:var(--sans);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;border-top:1px solid rgba(201,162,39,.15);border-bottom:1px solid rgba(201,162,39,.15);padding:11px 0}
+.spec{text-align:center}
+.spec b{display:block;font-size:.98rem;color:var(--bege)}
+.spec span{font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.prop .btn{margin-top:auto;justify-content:center}
+.prop-empty{grid-column:1/-1;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px;padding:28px 20px}
+/* Modal do imóvel */
+.modal{position:fixed;inset:0;z-index:80;background:rgba(5,4,2,.78);backdrop-filter:blur(4px);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:22px 14px}
+.modal.open{display:flex}
+.modal-box{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:20px;max-width:580px;width:100%;padding:24px 22px;position:relative}
+.modal-close{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:rgba(10,8,5,.8);color:var(--bege);font-size:1.15rem;cursor:pointer;z-index:2}
+.modal-gal{position:relative;border-radius:14px;overflow:hidden}
+.modal-gal .prop-img{aspect-ratio:16/10}
+.modal-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.modal-thumbs .prop-img{aspect-ratio:4/3;border-radius:10px}
+.modal-thumbs .prop-img svg{width:30px;height:30px}
+.modal-box h3{font-size:1.5rem;margin-top:18px}
+.modal-box .desc{color:var(--muted);font-size:.96rem;margin-top:10px}
+.modal-box .specs{margin-top:16px}
+/* Formulários (simulador / negocie) */
 .sim{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .sim-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;margin-top:28px}
 .sim-grid{display:grid;gap:16px}
 @media(min-width:760px){.sim-grid{grid-template-columns:1fr 1fr}}
-.field label{display:block;font-size:.82rem;font-weight:700;letter-spacing:.04em;color:var(--gold2);margin-bottom:7px;text-transform:uppercase}
-.field input{width:100%;background:#0f0c07;border:1px solid var(--line);border-radius:10px;color:var(--bege);padding:13px 14px;font-size:1.05rem;font-family:var(--sans)}
-.field input:focus{outline:2px solid var(--gold);border-color:transparent}
 .toggle{display:flex;background:#0f0c07;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .toggle button{flex:1;background:transparent;border:0;color:var(--muted);font-weight:700;padding:13px;font-size:.98rem;cursor:pointer;font-family:var(--sans)}
 .toggle button.active{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#241a02}
@@ -116,10 +163,10 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:"+";color:var(--gold2);font-size:1.3rem;line-height:1}
 details[open ] summary::after{content:"–"}
 details p{color:var(--muted);padding:0 0 17px;font-size:.96rem}
-/* Final CTA */
-.final{background:radial-gradient(700px 340px at 50% 0%,rgba(201,162,39,.2),transparent 65%),var(--bg2);border-top:1px solid var(--line);text-align:center}
-.final h2{max-width:640px;margin:0 auto 12px}
-.final p{color:var(--muted);max-width:540px;margin:0 auto 26px}
+/* CTA final com paisagem */
+.final{background:linear-gradient(180deg,rgba(12,10,7,.84),rgba(12,10,7,.72) 50%,rgba(12,10,7,.92)),url('fundo-cta.jpg') center 38%/cover no-repeat,var(--bg2);border-top:1px solid var(--line);text-align:center}
+.final h2{max-width:640px;margin:0 auto 12px;text-shadow:0 2px 16px rgba(0,0,0,.6)}
+.final p{color:#ddd2b8;max-width:540px;margin:0 auto 26px}
 footer{padding:30px 0 96px;text-align:center;font-size:.82rem;color:var(--muted);border-top:1px solid rgba(201,162,39,.12)}
 footer b{color:var(--bege)}
 /* Floating */
@@ -135,7 +182,7 @@ footer b{color:var(--bege)}
       <span class="logo-m">LM</span>
       <span><b>LUCIANA DE MATOS</b><small>Corretora de Imóveis · Rio de Janeiro</small></span>
     </a>
-    <!-- CTA 1 · cabeçalho -->
+    <!-- CTA · cabeçalho -->
     <a class="btn small" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20im%C3%B3veis%20no%20Rio." target="_blank" rel="noopener">Falar no WhatsApp</a>
   </div>
 </header>
@@ -144,23 +191,69 @@ footer b{color:var(--bege)}
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap hero-in">
-    <div>
-      <span class="badge">Alto padrão e investimento · Rio de Janeiro/RJ</span>
-      <h1>Quer investir em imóvel com <span class="gold">segurança e estratégia</span>?</h1>
-      <p class="lead">Sou <b>Luciana de Matos</b>, corretora de imóveis no Rio de Janeiro. Se você não entende sobre o assunto, eu te ajudo: trabalho com <b>estratégia e inteligência na escolha do seu próximo imóvel</b> — para morar ou para investir — com acompanhamento em cada etapa, até as chaves.</p>
-      <div class="hero-ctas">
-        <!-- CTA 2 · hero principal -->
-        <a class="btn" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Quero%20investir%20em%20im%C3%B3vel%20no%20Rio%2C%20mas%20n%C3%A3o%20entendo%20sobre%20o%20assunto.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.1.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.3.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg> Quero ajuda para investir</a>
-        <!-- CTA 3 · hero simulador -->
-        <a class="btn ghost" href="#simulador">Simular financiamento ↓</a>
+  <div class="wrap">
+    <div class="hero-in">
+      <div>
+        <span class="badge">Alto padrão e investimento · Rio de Janeiro/RJ</span>
+        <h1>Quer investir em imóvel com <span class="gold">segurança e estratégia</span>?</h1>
+        <p class="lead">Sou <b>Luciana de Matos</b>, corretora de imóveis no Rio de Janeiro. Se você não entende sobre o assunto, eu te ajudo: trabalho com <b>estratégia e inteligência na escolha do seu próximo imóvel</b> — para morar ou para investir — com acompanhamento em cada etapa, até as chaves.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Quero%20investir%20em%20im%C3%B3vel%20no%20Rio%2C%20mas%20n%C3%A3o%20entendo%20sobre%20o%20assunto.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.1.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.3.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg> Quero ajuda para investir</a>
+          <a class="btn ghost" href="#imoveis">Ver imóveis ↓</a>
+        </div>
+        <p class="hero-note">Atendimento direto com a corretora · Sem compromisso</p>
       </div>
-      <p class="hero-note">Atendimento direto com a corretora · Sem compromisso</p>
+      <div class="photo-card">
+        <img src="foto-luciana.jpg" alt="Luciana de Matos, corretora de imóveis no Rio de Janeiro">
+        <div class="photo-chip"><b>Luciana de Matos</b><span>CRECI-RJ 106.133</span></div>
+      </div>
     </div>
-    <div class="photo-card">
-      <img src="foto-luciana.jpg" alt="Luciana de Matos, corretora de imóveis no Rio de Janeiro">
-      <div class="photo-chip"><b>Luciana de Matos</b><span>CRECI-RJ 106.133</span></div>
-    </div>
+
+    <!-- BARRA DE BUSCA -->
+    <form class="search" id="buscaTopo">
+      <h3>Encontre o seu próximo imóvel</h3>
+      <p>Use os filtros e veja as opções na vitrine aqui embaixo.</p>
+      <div class="search-grid">
+        <div class="field">
+          <label for="bObjetivo">Objetivo</label>
+          <select id="bObjetivo">
+            <option value="">Comprar ou investir</option>
+            <option value="morar">Comprar para morar</option>
+            <option value="investir">Investir</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bBairro">Bairro / região</label>
+          <select id="bBairro">
+            <option value="">Todos</option>
+            <option>Barra da Tijuca</option>
+            <option>Centro</option>
+            <option>Zona Sul</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bQuartos">Quartos (mín.)</label>
+          <select id="bQuartos">
+            <option value="">Qualquer</option>
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bPreco">Preço até</label>
+          <select id="bPreco">
+            <option value="">Sem limite</option>
+            <option value="600000">R$ 600 mil</option>
+            <option value="1000000">R$ 1 milhão</option>
+            <option value="2000000">R$ 2 milhões</option>
+            <option value="3500000">R$ 3,5 milhões</option>
+          </select>
+        </div>
+        <button class="btn gold" type="submit" style="justify-content:center">Buscar imóveis</button>
+      </div>
+    </form>
   </div>
 </section>
 
@@ -174,8 +267,73 @@ footer b{color:var(--bege)}
   </div>
 </div>
 
+<!-- DESTAQUES -->
+<section id="destaques" style="padding-bottom:0">
+  <div class="wrap">
+    <p class="kicker">Oportunidades em destaque</p>
+    <h2>Destaques <span class="gold">da vitrine</span></h2>
+    <p class="sub">Os imóveis em evidência aparecem aqui e na vitrine completa logo abaixo — cada um com página própria, fotos e botão de WhatsApp.</p>
+    <div class="props" id="destaqueGrid"></div>
+  </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section id="imoveis">
+  <div class="wrap">
+    <p class="kicker">Catálogo de imóveis</p>
+    <h2>Vitrine de <span class="gold">imóveis</span></h2>
+    <p class="sub">Busque por bairro, tipo e faixa de preço, abra o detalhe de cada imóvel e chame no WhatsApp já falando dele.</p>
+
+    <div class="cat-note">📌 <b>Vitrine demonstrativa:</b> os seus imóveis entram aqui — basta enviar as fotos e as informações de cada um (preço, quartos, banheiros, vagas e área) para eles aparecerem nesta grelha, com busca, filtros e página de detalhe.</div>
+
+    <div class="toolbar">
+      <div class="field">
+        <label for="fBusca">Buscar</label>
+        <input id="fBusca" type="text" placeholder="Buscar por código ou palavra…">
+      </div>
+      <div class="field">
+        <label for="fBairro">Bairro / região</label>
+        <select id="fBairro">
+          <option value="">Todos</option>
+          <option>Barra da Tijuca</option>
+          <option>Centro</option>
+          <option>Zona Sul</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fTipo">Objetivo</label>
+        <select id="fTipo">
+          <option value="">Todos</option>
+          <option value="morar">Para morar</option>
+          <option value="investir">Para investir</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fQuartos">Quartos (mín.)</label>
+        <select id="fQuartos">
+          <option value="">Qualquer</option>
+          <option value="1">1+</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fOrdem">Ordenar</label>
+        <select id="fOrdem">
+          <option value="recentes">Mais recentes</option>
+          <option value="menor-preco">Menor preço</option>
+          <option value="maior-preco">Maior preço</option>
+        </select>
+      </div>
+    </div>
+    <p class="cat-count" id="catCount"></p>
+    <div class="props" id="propGrid"></div>
+  </div>
+</section>
+
 <!-- MORAR OU INVESTIR -->
-<section id="atendimento">
+<section id="atendimento" style="padding-top:0">
   <div class="wrap">
     <p class="kicker">Morar ou investir</p>
     <h2>Dois objetivos, <span class="gold">uma estratégia</span></h2>
@@ -191,7 +349,6 @@ footer b{color:var(--bege)}
           <li>Alto padrão com potencial de valorização</li>
           <li>Números analisados antes da decisão</li>
         </ul>
-        <!-- CTA 4 · investir -->
         <a class="btn" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Tenho%20interesse%20em%20investir%20em%20im%C3%B3veis%20no%20Rio%20%E2%80%94%20alto%20padr%C3%A3o%20e%20studios%20para%20investidor.%20Pode%20me%20apresentar%20as%20oportunidades%3F" target="_blank" rel="noopener">Quero investir com estratégia</a>
       </article>
     </div>
@@ -200,16 +357,86 @@ footer b{color:var(--bege)}
       <article class="card">
         <h3>Comprar para morar</h3>
         <p>Alto padrão na Barra da Tijuca, incluindo opções frente mar, e seleção personalizada nas regiões mais valorizadas do Rio. Conte o que você procura e receba uma seleção feita para o seu momento de vida.</p>
-        <!-- CTA 5 · morar -->
         <a class="btn gold" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Estou%20procurando%20um%20im%C3%B3vel%20de%20alto%20padr%C3%A3o%20para%20morar%20no%20Rio.%20Pode%20me%20passar%20as%20op%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Receber opções para morar</a>
       </article>
       <article class="card">
         <h3>Não entende sobre o assunto?</h3>
         <p>Sem problema — essa é justamente a minha especialidade. Explico cada etapa sem juridiquês: quanto você pode investir, quais são os custos envolvidos e como comprar com segurança, no seu ritmo.</p>
-        <!-- CTA 6 · começar -->
         <a class="btn gold" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Quero%20investir%20em%20im%C3%B3vel%2C%20mas%20n%C3%A3o%20entendo%20sobre%20o%20assunto.%20Por%20onde%20eu%20come%C3%A7o%3F" target="_blank" rel="noopener">Quero entender como investir</a>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- BAIRROS -->
+<section id="bairros" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Onde eu atuo</p>
+    <h2>Bairros em <span class="gold">destaque</span></h2>
+    <div class="grid c3">
+      <article class="card">
+        <span class="tag">Frente mar</span>
+        <h3>Barra da Tijuca</h3>
+        <p>Alto padrão à beira-mar, condomínios completos e qualidade de vida — a região de quem quer morar bem no Rio, com opções frente mar.</p>
+        <a class="btn ghost" href="#imoveis">Ver imóveis na Barra</a>
+      </article>
+      <article class="card">
+        <span class="tag">Investidor</span>
+        <h3>Centro</h3>
+        <p>Studios e compactos com alta demanda de locação — a porta de entrada de quem quer investir com estratégia e liquidez.</p>
+        <a class="btn ghost" href="#imoveis">Ver imóveis no Centro</a>
+      </article>
+      <article class="card">
+        <span class="tag">Valorização</span>
+        <h3>Zona Sul</h3>
+        <p>Ipanema, Leblon e arredores: endereços consagrados do Rio, com valorização histórica e procura permanente.</p>
+        <a class="btn ghost" href="#imoveis">Ver imóveis na Zona Sul</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NEGOCIE SEU IMÓVEL -->
+<section id="negocie" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Para proprietários</p>
+    <h2>Negocie o <span class="gold">seu imóvel</span></h2>
+    <p class="sub">Quer vender o seu imóvel no Rio? Preencha os dados abaixo e envie: a mensagem chega pronta no meu WhatsApp e eu retorno com a estratégia de venda.</p>
+    <form class="sim-box" id="formNegocie" style="margin-top:28px">
+      <div class="sim-grid">
+        <div class="field">
+          <label for="nNome">Seu nome</label>
+          <input id="nNome" type="text" placeholder="Como posso te chamar?" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="nTipo">Tipo do imóvel</label>
+          <select id="nTipo">
+            <option value="">Selecione…</option>
+            <option>Apartamento</option>
+            <option>Studio</option>
+            <option>Cobertura</option>
+            <option>Casa</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="nBairro">Bairro</label>
+          <input id="nBairro" type="text" placeholder="Ex.: Barra da Tijuca">
+        </div>
+        <div class="field">
+          <label for="nTelefone">Seu telefone (opcional)</label>
+          <input id="nTelefone" type="tel" placeholder="(21) 90000-0000" autocomplete="tel">
+        </div>
+        <div class="field" style="grid-column:1/-1">
+          <label for="nMsg">Sobre o imóvel</label>
+          <textarea id="nMsg" placeholder="Quartos, área, o que mais quiser adiantar…"></textarea>
+        </div>
+      </div>
+      <div style="margin-top:20px">
+        <button class="btn" type="submit" style="width:100%;justify-content:center">Enviar pelo WhatsApp</button>
+      </div>
+      <p class="sim-fine">Sem compromisso: você só envia se quiser. O atendimento é direto com a corretora.</p>
+    </form>
   </div>
 </section>
 
@@ -257,7 +484,6 @@ footer b{color:var(--bege)}
           <dt id="resExtraLabel">Total estimado do financiamento</dt><dd id="resExtra">—</dd>
           <dt>Sistema</dt><dd id="resSistema">—</dd>
         </dl>
-        <!-- CTA 7 · resultado da simulação (href montado pelo JS com os valores) -->
         <a class="btn" id="btnWhatsSim" href="https://wa.me/5521969720163" target="_blank" rel="noopener" style="width:100%;justify-content:center">Enviar esta simulação à Luciana</a>
       </div>
       <p class="sim-fine">Simulação meramente ilustrativa, com matemática genérica de financiamento (SAC/Price). Não inclui seguros, taxas bancárias nem TR. Valores e aprovação sujeitos à análise do banco.</p>
@@ -276,7 +502,6 @@ footer b{color:var(--bege)}
       <div class="step"><div class="n">3</div><h3>Acompanhamento até as chaves</h3><p>Proposta, documentação e assinatura com acompanhamento em cada etapa — você nunca fica sem saber o próximo passo.</p></div>
     </div>
     <div style="text-align:center;margin-top:28px">
-      <!-- CTA 8 · primeiro passo -->
       <a class="btn" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Quero%20dar%20o%20primeiro%20passo%20para%20comprar%20ou%20investir%20em%20um%20im%C3%B3vel%20no%20Rio.%20Podemos%20conversar%3F" target="_blank" rel="noopener">Dar o primeiro passo</a>
     </div>
   </div>
@@ -295,7 +520,6 @@ footer b{color:var(--bege)}
       <p><b>Luciana de Matos</b> é corretora de imóveis no <b>Rio de Janeiro/RJ</b> (CRECI-RJ 106.133), com atuação em <b>imóveis de alto padrão e investimento</b> — da Barra da Tijuca, com opções frente mar, aos studios no Centro voltados ao investidor.</p>
       <p>O posicionamento dela é direto: <b>investimento imobiliário de alto padrão, com estratégia e inteligência na escolha do seu próximo imóvel</b>. E quem não entende sobre o assunto recebe explicação completa, no seu ritmo, sem juridiquês.</p>
       <p>Atendimento personalizado do início ao fim: quem fala com você é a própria corretora.</p>
-      <!-- CTA 9 · sobre -->
       <a class="btn ghost" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Vim%20pelo%20site%20e%20quero%20falar%20com%20voc%C3%AA%20sobre%20um%20im%C3%B3vel%20no%20Rio." target="_blank" rel="noopener">Falar com a Luciana</a>
       <br><a class="ig" href="https://www.instagram.com/corretoralucianadm" target="_blank" rel="noopener">Instagram · @corretoralucianadm</a>
     </div>
@@ -317,6 +541,10 @@ footer b{color:var(--bege)}
         <p>Meu foco é o alto padrão na Barra da Tijuca — incluindo opções frente mar — e os studios no Centro voltados a investidores. Está procurando outra região? Chama no WhatsApp que eu verifico as melhores opções para você.</p>
       </details>
       <details>
+        <summary>Como os imóveis entram nesta vitrine?</summary>
+        <p>Esta é a vitrine demonstrativa do site: cada espaço mostra como um imóvel aparece — com fotos, preço, especificações, busca por bairro e página de detalhe. Os imóveis reais entram na entrega, a partir das fotos e informações de cada um.</p>
+      </details>
+      <details>
         <summary>A simulação do site é o valor oficial?</summary>
         <p>Não — é uma estimativa inicial, para você ter uma noção da parcela. O valor oficial depende do banco escolhido, da análise do seu perfil e das condições do imóvel. Eu confirmo tudo com você no WhatsApp, sem compromisso.</p>
       </details>
@@ -330,7 +558,6 @@ footer b{color:var(--bege)}
       </details>
     </div>
     <div style="text-align:center;margin-top:24px">
-      <!-- CTA 10 · FAQ -->
       <a class="btn small" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20im%C3%B3veis%20de%20alto%20padr%C3%A3o%20e%20investimento%20no%20Rio.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener">Tirar outra dúvida no WhatsApp</a>
     </div>
   </div>
@@ -341,7 +568,6 @@ footer b{color:var(--bege)}
   <div class="wrap">
     <h2>Seu próximo imóvel <span class="gold">começa com uma conversa</span></h2>
     <p>Me conte o seu objetivo — morar ou investir — e receba uma seleção com estratégia, números claros e acompanhamento de verdade.</p>
-    <!-- CTA 11 · final -->
     <a class="btn" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Quero%20receber%20uma%20sele%C3%A7%C3%A3o%20de%20im%C3%B3veis%20de%20alto%20padr%C3%A3o%20e%20investimento%20no%20Rio%2C%20feita%20para%20o%20meu%20perfil." target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.1.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.3.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg> Chamar no WhatsApp agora</a>
   </div>
 </section>
@@ -355,12 +581,155 @@ footer b{color:var(--bege)}
   </div>
 </footer>
 
-<!-- CTA 12 · botão flutuante -->
+<!-- Botão flutuante -->
 <a class="float" href="https://wa.me/5521969720163?text=Ol%C3%A1%2C%20Luciana%21%20Vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.1.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.3.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
 </a>
 
+<!-- MODAL DO IMÓVEL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Detalhe do imóvel">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+    <div class="modal-gal">
+      <div class="prop-img">
+        <span class="prop-badge">Exemplo</span>
+        <span class="prop-code" id="mCodigo">#001</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><rect x="10" y="14" width="4" height="5.5"/></svg>
+        <span>Fotos a adicionar</span>
+      </div>
+    </div>
+    <div class="modal-thumbs">
+      <div class="prop-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m5 17 4.5-4 3 2.5L16 12l3 3.5"/></svg></div>
+      <div class="prop-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m5 17 4.5-4 3 2.5L16 12l3 3.5"/></svg></div>
+      <div class="prop-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m5 17 4.5-4 3 2.5L16 12l3 3.5"/></svg></div>
+    </div>
+    <h3 id="mTitulo">Imóvel a adicionar</h3>
+    <p class="prop-loc" id="mLoc">Bairro · Rio de Janeiro — a adicionar</p>
+    <div class="prop-price" style="margin-top:8px"><small>Preço</small>A adicionar</div>
+    <div class="specs">
+      <div class="spec"><b>—</b><span>Quartos</span></div>
+      <div class="spec"><b>—</b><span>Banhos</span></div>
+      <div class="spec"><b>—</b><span>Vagas</span></div>
+      <div class="spec"><b>—</b><span>Área m²</span></div>
+    </div>
+    <p class="desc">Este espaço é a <b>página de detalhe de cada imóvel</b>: aqui entram a galeria de fotos, a descrição completa, as especificações (quartos, banheiros, vagas e área) e o botão de WhatsApp já com a mensagem sobre este imóvel. Quando os imóveis reais forem enviados, cada detalhe aparece aqui.</p>
+    <a class="btn" id="mWhats" href="https://wa.me/5521969720163" target="_blank" rel="noopener" style="width:100%;justify-content:center;margin-top:18px">Tenho interesse — falar com a Luciana</a>
+  </div>
+</div>
+
 <script>
+/* ===== CATÁLOGO (dirigido por dados) =====
+   Espaços reservados ("A adicionar"): os imóveis reais entram neste array
+   na entrega — basta preencher titulo, bairro, tipo, preco, quartos,
+   banheiros, vagas, area e fotos de cada um. */
+var IMOVEIS=[
+  {codigo:'#001',destaque:true},
+  {codigo:'#002',destaque:true},
+  {codigo:'#003',destaque:true},
+  {codigo:'#004',destaque:false},
+  {codigo:'#005',destaque:false},
+  {codigo:'#006',destaque:false}
+];
+var ICONE_CASA='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><rect x="10" y="14" width="4" height="5.5"/></svg>';
+function cardHTML(p){
+  return '<article class="prop">'
+    +'<div class="prop-img"><span class="prop-badge">Exemplo</span><span class="prop-code">'+p.codigo+'</span>'
+    +ICONE_CASA+'<span>A adicionar</span></div>'
+    +'<div class="prop-body"><h3>Imóvel a adicionar</h3>'
+    +'<p class="prop-loc">Bairro · Rio de Janeiro — a adicionar</p>'
+    +'<div class="prop-price"><small>Preço</small>A adicionar</div>'
+    +'<div class="specs">'
+    +'<div class="spec"><b>—</b><span>Quartos</span></div>'
+    +'<div class="spec"><b>—</b><span>Banhos</span></div>'
+    +'<div class="spec"><b>—</b><span>Vagas</span></div>'
+    +'<div class="spec"><b>—</b><span>Área m²</span></div>'
+    +'</div>'
+    +'<button class="btn gold small" type="button" data-detalhe="'+p.codigo+'" style="justify-content:center">Ver detalhes</button>'
+    +'</div></article>';
+}
+function aplicarFiltros(){
+  var busca=(document.getElementById('fBusca').value||'').toLowerCase().trim();
+  var lista=IMOVEIS.filter(function(p){
+    if(!busca) return true;
+    return (p.codigo+' imóvel a adicionar').indexOf(busca)>-1;
+  });
+  /* bairro/tipo/quartos/preço: os espaços reservados ainda não têm esses
+     dados (entram com os imóveis reais) — por isso permanecem visíveis
+     como vagas disponíveis da vitrine. */
+  var ordem=document.getElementById('fOrdem').value;
+  if(ordem==='menor-preco'||ordem==='maior-preco'){
+    lista=lista.slice(); /* sem preços nos espaços de exemplo: mantém a ordem dos códigos */
+  }
+  var grid=document.getElementById('propGrid');
+  if(!lista.length){
+    grid.innerHTML='<div class="prop-empty">Nenhum espaço encontrado para essa busca. Tente o código (ex.: #001) ou limpe os filtros.</div>';
+  }else{
+    grid.innerHTML=lista.map(cardHTML).join('');
+  }
+  document.getElementById('catCount').textContent=lista.length+(lista.length===1?' espaço de imóvel na vitrine':' espaços de imóveis na vitrine')+' · os imóveis reais entram na entrega';
+  ligarDetalhes(grid);
+}
+function renderDestaques(){
+  var grid=document.getElementById('destaqueGrid');
+  grid.innerHTML=IMOVEIS.filter(function(p){return p.destaque;}).map(cardHTML).join('');
+  ligarDetalhes(grid);
+}
+function ligarDetalhes(scope){
+  var btns=scope.querySelectorAll('[data-detalhe]');
+  for(var i=0;i<btns.length;i++){
+    btns[i].addEventListener('click',function(){ abrirModal(this.getAttribute('data-detalhe')); });
+  }
+}
+/* Modal do imóvel */
+var modal=document.getElementById('modal');
+function abrirModal(codigo){
+  document.getElementById('mCodigo').textContent=codigo;
+  var msg='Olá, Luciana! Vim pelo site e quero mais informações sobre os imóveis (espaço '+codigo+' da vitrine). Pode me passar as opções?';
+  document.getElementById('mWhats').href='https://wa.me/5521969720163?text='+encodeURIComponent(msg);
+  modal.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function fecharModal(){ modal.classList.remove('open'); document.body.style.overflow=''; }
+document.getElementById('modalClose').addEventListener('click',fecharModal);
+modal.addEventListener('click',function(e){ if(e.target===modal) fecharModal(); });
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') fecharModal(); });
+/* Ligações dos filtros */
+['fBusca','fBairro','fTipo','fQuartos','fOrdem'].forEach(function(id){
+  var el=document.getElementById(id);
+  el.addEventListener('input',aplicarFiltros);
+  el.addEventListener('change',aplicarFiltros);
+});
+/* Busca do topo → aplica nos filtros do catálogo e rola até ele */
+document.getElementById('buscaTopo').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('fTipo').value=document.getElementById('bObjetivo').value;
+  document.getElementById('fBairro').value=document.getElementById('bBairro').value;
+  document.getElementById('fQuartos').value=document.getElementById('bQuartos').value;
+  aplicarFiltros();
+  document.getElementById('imoveis').scrollIntoView({behavior:'smooth'});
+});
+renderDestaques();
+aplicarFiltros();
+/* Negocie seu imóvel → mensagem de WhatsApp */
+document.getElementById('formNegocie').addEventListener('submit',function(e){
+  e.preventDefault();
+  var nome=document.getElementById('nNome').value.trim();
+  var tipo=document.getElementById('nTipo').value;
+  var bairro=document.getElementById('nBairro').value.trim();
+  var tel=document.getElementById('nTelefone').value.trim();
+  var msgExtra=document.getElementById('nMsg').value.trim();
+  var linhas=['Olá, Luciana! Quero negociar o meu imóvel pelo seu site.'];
+  if(nome) linhas.push('Nome: '+nome);
+  if(tipo) linhas.push('Tipo do imóvel: '+tipo);
+  if(bairro) linhas.push('Bairro: '+bairro);
+  if(tel) linhas.push('Meu telefone: '+tel);
+  if(msgExtra) linhas.push('Sobre o imóvel: '+msgExtra);
+  window.open('https://wa.me/5521969720163?text='+encodeURIComponent(linhas.join('\n')),'_blank');
+});
+</script>
+
+<script>
+/* ===== SIMULADOR SAC / PRICE (inalterado) ===== */
 (function(){
   var sistema='price';
   var brl=function(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});};
